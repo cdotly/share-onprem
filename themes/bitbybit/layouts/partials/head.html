@@ -1,0 +1,31 @@
+
+    <html lang="{{ .Page.Language | default `en` }}" class="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {{ hugo.Generator }}
+    {{ partial "head/meta.html" . }}
+    {{ partial "brand/favicon.html" . }}
+    <title>{{ .Site.Title }}</title>
+
+    {{ $assetBusting := not .Site.Params.disableAssetsBusting }}
+
+    <link href="{{`css/styles.css` | relURL}}{{ if $assetBusting }}?{{ now.Unix }}{{ end }}" rel="stylesheet" type="text/css">
+    <link href="{{`css/nav.css` | relURL}}{{ if $assetBusting }}?{{ now.Unix }}{{ end }}" rel="stylesheet" type="text/css">
+    <link href="{{`css/css-grid.css` | relURL}}{{ if $assetBusting }}?{{ now.Unix }}{{ end }}" rel="stylesheet" type="text/css">
+    <link href="{{`css/typography.css` | relURL}}{{ if $assetBusting }}?{{ now.Unix }}{{ end }}" rel="stylesheet" type="text/css">
+    <link href="{{`css/atom-one-dark-reasonable.css.css` | relURL}}{{ if $assetBusting }}?{{ now.Unix }}{{ end }}" rel="stylesheet" type="text/css">
+
+
+    
+    <!-- <link href="{{`css/brand.css` | relURL}}{{ if $assetBusting }}?{{ now.Unix }}{{ end }}" rel="stylesheet"> -->
+    <!-- <link href="{{`css/browser-reset.css` | relURL}}{{ if $assetBusting }}?{{ now.Unix }}{{ end }}" rel="stylesheet"> -->
+
+    <!-- <script src="{{`js/jquery-3.3.1.min.js` | relURL}}{{ if $assetBusting }}?{{ now.Unix }}{{ end }}"></script> -->
+    <script src="{{`js/nav.js` | relURL}}{{ if $assetBusting }}?{{ now.Unix }}{{ end }}"></script>
+    <script src="{{`js/search.js` | relURL}}{{ if $assetBusting }}?{{ now.Unix }}{{ end }}"></script>
+
+
+</head>

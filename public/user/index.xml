@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>End User on SpiderOak Share File Sharing Documentation</title>
+    <link>https://shareapp.tk/user.html</link>
+    <description>Recent content in End User on SpiderOak Share File Sharing Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <copyright>© 2019 &lt;a href=&#34;https://spideroak.com&#34;&gt;SpiderOak Inc.&lt;/a&gt; All rights reserved.</copyright>
+    <lastBuildDate>Fri, 09 Aug 2019 13:07:06 -0500</lastBuildDate>
+    
+	<atom:link href="https://shareapp.tk/user/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Joining a Team</title>
+      <link>https://shareapp.tk/user/2jointeam.html</link>
+      <pubDate>Fri, 09 Aug 2019 15:50:20 -0500</pubDate>
+      
+      <guid>https://shareapp.tk/user/2jointeam.html</guid>
+      <description>SpiderOak Share allows a user to be part of multiple teams. Immediately after account creation the user needs to either Create a Team or Add a Team to their account. Most Users will Add a Team. Adding a Team can be achieved by inputting the proper Team URL into the applicable field and selecting the &amp;ldquo;Add Team&amp;rdquo; button.
+How do I join a SpiderOak Share Team?  Once the user has completed the account sign up, they will be greeted with a page where they may request to Add a Team or Create a Team.</description>
+    </item>
+    
+    <item>
+      <title>Create a Team</title>
+      <link>https://shareapp.tk/user/3createteam.html</link>
+      <pubDate>Fri, 09 Aug 2019 15:53:54 -0500</pubDate>
+      
+      <guid>https://shareapp.tk/user/3createteam.html</guid>
+      <description>Currently, creating a Team within SpiderOak Share requires a Setup URL, which will navigate your Team to the correct server and back-end. Team URLs and Setup URLs share information and look similar, but their functions are different. Providing SpiderOak share the correct Setup URL ensures that your Team Members can connect to the correct Shared Spaces and start collaborating. Creating a Team requires an active account and the Setup URL, which should be attained from your internal IT team.</description>
+    </item>
+    
+    <item>
+      <title>Create a Space</title>
+      <link>https://shareapp.tk/user/4createspace.html</link>
+      <pubDate>Fri, 09 Aug 2019 15:57:41 -0500</pubDate>
+      
+      <guid>https://shareapp.tk/user/4createspace.html</guid>
+      <description>A &amp;ldquo;Space&amp;rdquo; is where the action is! Spaces can be Shared Spaces, with several users, or Personal Spaces, with only one user. Spaces are a replacement for networked drives, shared folders, and server backups. Like these older storage solutions, Spaces contain user-selected data, including historical versions of the data. Personal Spaces are ideal for important files that are intended only for the creator or current owner of the file. Shared Spaces are ideal for files that require input from several team members, are being edited and expanded by a group of users, or need to be securely distributed across a team.</description>
+    </item>
+    
+    <item>
+      <title>Adding and Removing Members From a Space</title>
+      <link>https://shareapp.tk/user/5adduserstospace.html</link>
+      <pubDate>Fri, 09 Aug 2019 15:59:24 -0500</pubDate>
+      
+      <guid>https://shareapp.tk/user/5adduserstospace.html</guid>
+      <description>Managing Space membership by adding and removing Team Members from Spaces ensures that only the desired team members have access to shared data. A Space admin may add a Team Member to a Shared Space, or a personal space, but when the Team Member is added to a personal space, it becomes a Shared Space. (A Space where the creator is the only member remains a Personal Space, but when another team member is added to the space it becomes a &amp;ldquo;Shared Space&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>Chat</title>
+      <link>https://shareapp.tk/user/7chat.html</link>
+      <pubDate>Fri, 09 Aug 2019 16:25:02 -0500</pubDate>
+      
+      <guid>https://shareapp.tk/user/7chat.html</guid>
+      <description>Chat is offered within a Shared Space to facilitate ad-hoc conversations with Space Members. This is intended to allow Space members to discuss possible file conflicts and additional collaborative ideas. Just like the files that are uploaded to a SpiderOak Share, the Chat messages are encrypted locally before being submitted to the server, and only distributed to Space members.
+How do I chat?  Simply access the Space Settings drop down menu and select the &amp;ldquo;Chat&amp;rdquo; option.</description>
+    </item>
+    
+  </channel>
+</rss>

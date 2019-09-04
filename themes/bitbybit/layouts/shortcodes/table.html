@@ -1,0 +1,153 @@
+<!-- tr: table row -->
+<!-- th: table header -->
+<!-- td: table cell/data -->
+
+<table style="width:100%; text-align: left;">
+    <!-- hash 1 -->
+    <tr>
+        <th>Platform</th>
+        <!-- <th>Verison</th> -->
+        <th>Hash</th>
+    </tr>
+    <tr>
+        <td>{{ .Get "platform-1" }}</td>
+        <!-- <td>{{ .Get "version" }}</td> -->
+        <td>{{ .Get "hash-1" }}</td>
+    </tr>
+
+    <!-- hash-2 -->
+    {{ if .Get "hash-2" }}
+        <tr>
+            <th>Platform</th>
+            <!-- <th>Verison</th> -->
+            <th>Hash</th>
+        </tr>
+
+        <tr>
+            <td>{{ .Get "platform-2" }}</td>
+            <!-- <td>{{ .Get "version" }}</td> -->
+            <td>{{ .Get "hash-2" }}</td>
+        </tr>
+    {{ end }}
+
+    <!-- hash-3 -->
+    {{ if .Get "hash-3" }}
+        <tr>
+            <th>Platform</th>
+            <!-- <th>Verison</th> -->
+            <th>Hash</th>
+        </tr>
+        
+        <tr>
+            <td>{{ .Get "platform-3" }}</td>
+            <!-- <td>{{ .Get "version" }}</td> -->
+            <td>{{ .Get "hash-3" }}</td>
+        </tr>
+    {{ end }}
+
+    <!-- hash-4 -->
+    {{ if .Get "hash-4" }}
+        <tr>
+            <th>Platform</th>
+            <!-- <th>Verison</th> -->
+            <th>Hash</th>
+        </tr>
+        
+        <tr>
+            <td>{{ .Get "platform-4" }}</td>
+            <!-- <td>{{ .Get "version" }}</td> -->
+            <td>{{ .Get "hash-4" }}</td>
+        </tr>
+    {{ end }}
+
+    <!-- hash-5 -->
+    {{ if .Get "hash-5" }}
+        <tr>
+            <th>Platform</th>
+            <!-- <th>Verison</th> -->
+            <th>Hash</th>
+        </tr>
+        
+        <tr>
+            <td>{{ .Get "platform-5" }}</td>
+            <!-- <td>{{ .Get "version" }}</td> -->
+            <td>{{ .Get "hash-5" }}</td>
+        </tr>
+    {{ end }}
+
+    <!-- hash-6 -->
+    {{ if .Get "hash-6" }}
+    <tr>
+        <th>Platform</th>
+        <!-- <th>Verison</th> -->
+        <th>Hash</th>
+    </tr>
+    
+    <tr>
+        <td>{{ .Get "platform-6" }}</td>
+        <!-- <td>{{ .Get "version" }}</td> -->
+        <td>{{ .Get "hash-6" }}</td>
+    </tr>
+    {{ end }}
+
+    <!-- hash-7 -->
+    {{ if .Get "hash-7" }}
+    <tr>
+        <th>Platform</th>
+        <!-- <th>Verison</th> -->
+        <th>Hash</th>
+    </tr>
+    
+    <tr>
+        <td>{{ .Get "platform-7" }}</td>
+        <!-- <td>{{ .Get "version" }}</td> -->
+        <td>{{ .Get "hash-7" }}</td>
+    </tr>
+    {{ end }}
+
+    <!-- hash-8 -->
+    {{ if .Get "hash-8" }}
+    <tr>
+        <th>Platform</th>
+        <!-- <th>Verison</th> -->
+        <th>Hash</th>
+    </tr>
+    
+    <tr>
+        <td>{{ .Get "platform-8" }}</td>
+        <!-- <td>{{ .Get "version" }}</td> -->
+        <td>{{ .Get "hash-8" }}</td>
+    </tr>
+    {{ end }}
+
+    <!-- hash-9 -->
+    {{ if .Get "hash-9" }}
+    <tr>
+        <th>Platform</th>
+        <!-- <th>Verison</th> -->
+        <th>Hash</th>
+    </tr>
+    
+    <tr>
+        <td>{{ .Get "platform-9" }}</td>
+        <!-- <td>{{ .Get "version" }}</td> -->
+        <td>{{ .Get "hash-9" }}</td>
+    </tr>
+    {{ end }}
+
+    <!-- hash-10 -->
+    {{ if .Get "hash-10" }}
+    <tr>
+        <th>Platform</th>
+        <!-- <th>Verison</th> -->
+        <th>Hash</th>
+    </tr>
+    
+    <tr>
+        <td>{{ .Get "platform-10" }}</td>
+        <!-- <td>{{ .Get "version" }}</td> -->
+        <td>{{ .Get "hash-10" }}</td>
+    </tr>
+    {{ end }}
+
+</table>    

@@ -1,0 +1,177 @@
+/* mobile */
+/* @media screen and (max-width: 576px) {
+} */
+
+/* small */
+/* @media screen and (min-width: 576px) {
+} */
+
+/* medium: tablet */
+/* @media screen and (min-width: 768px) {
+} */
+
+
+/* large: desktop */
+/* @media (min-width: 992px) {
+} */
+
+/* xl */
+/* @media (min-width: 1200px) {
+} */
+
+/* xxl */
+/* @media (min-width: 1400px) {
+} */
+
+
+@charset "UTF-8";
+
+@import "nav.css";
+@import "css-grid.css";
+@import "typography.css";
+/* @import "sidebar-learn.css"; */
+
+@import "atom-one-dark-reasonable.css";
+
+
+/* @import "brand.css"; */
+@import "browser-reset.css";
+/* @import "footer.css" */
+
+
+/* custom cursor 
+-------------------------------------------------- */
+body {
+  cursor: url("../images/icons/cursor-gray@2x.png"), auto;
+}
+
+body a {
+  cursor: url("../images/icons/cursor-blue@2x.png"), auto;
+}
+
+
+/* html body basics 
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  position: relative;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+
+
+
+
+/* buttons 
+-------------------------------------------------- */.btn:focus,
+.btn:active {
+   outline: none !important;
+   box-shadow: none;
+}
+
+.h-100 {
+  height: 100vh !important;
+}
+
+
+
+/* line */
+hr {
+    border: 0; 
+    border-bottom: 1px solid #303033;
+    padding: 0;
+}
+
+/* hr.padding {
+    padding: 1rem 0;
+} */
+
+hr.full-width {
+  margin-left: -25px; 
+  margin-right: -50px; 
+  margin-top: 0; 
+  margin-bottom:0;
+}
+
+
+
+/* rotate -90 */
+.rotate-90 {
+    -moz-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+
+
+
+
+.main img {
+  margin: 2rem 0;
+  display: block;
+  text-align: center;
+  /* width: 100%; */
+  height: auto;
+  border: 1px solid #30303325;
+  margin-top: 1rem; 
+  margin-bottom: 1rem; 
+}
+
+.img-fluid {
+  width: 100%; 
+  height: auto;
+}
+
+
+
+/* xs and sm
+-------------------------------------------------- */
+@media screen and (max-width: 767px) {
+   .main img {
+     width: 80%; 
+     margin: 3rem auto;
+   }
+}
+
+/* md
+-------------------------------------------------- */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+   .main img {
+     width: 80%; 
+   }
+}
+
+/* lg and up
+-------------------------------------------------- */
+@media (min-width: 992px) {   
+}
+
+/* table */
+table {
+    border: 1px solid #eaeaea;
+    table-layout: auto;
+}
+th {
+    background: #f7f7f7;
+    padding: 0.5rem;
+    border: 1px solid #eaeaea;
+    text-align: left;
+}
+td {
+    padding: 0.5rem;
+    border: 1px solid #eaeaea;
+    text-align: left;
+}
+
+
+#searchResults {
+    text-align: left;
+}

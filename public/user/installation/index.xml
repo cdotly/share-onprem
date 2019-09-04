@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Installing SpiderOak Share on SpiderOak Share File Sharing Documentation</title>
+    <link>https://shareapp.tk/user/installation.html</link>
+    <description>Recent content in Installing SpiderOak Share on SpiderOak Share File Sharing Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <copyright>© 2019 &lt;a href=&#34;https://spideroak.com&#34;&gt;SpiderOak Inc.&lt;/a&gt; All rights reserved.</copyright>
+    <lastBuildDate>Fri, 09 Aug 2019 15:35:44 -0500</lastBuildDate>
+    
+	<atom:link href="https://shareapp.tk/user/installation/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Team URLs</title>
+      <link>https://shareapp.tk/user/installation/1teamurl.html</link>
+      <pubDate>Fri, 09 Aug 2019 15:41:15 -0500</pubDate>
+      
+      <guid>https://shareapp.tk/user/installation/1teamurl.html</guid>
+      <description>SpiderOak Share can connect to either SpiderOak’s default back end (which is offered as a Software as a Service product), or a back end hosted locally (also known as on-prem.) All users install and use the same SpiderOak Share application regardless of whether they connect to a locally or remotely hosted back end. However, user accounts must be hosted on the same backed as the team the user wishes to join, therefore, teams are assigned URLs that point to the correct back end.</description>
+    </item>
+    
+    <item>
+      <title>Creating an Account</title>
+      <link>https://shareapp.tk/user/installation/2createaccount.html</link>
+      <pubDate>Fri, 09 Aug 2019 15:46:05 -0500</pubDate>
+      
+      <guid>https://shareapp.tk/user/installation/2createaccount.html</guid>
+      <description>Account creation must occur before a user can join a team, join a Space and start collaborating with other Team Members. SpiderOak Share uses a unique system during account creation to link your account to your keys. One Key is an Account ID key that is shared with the Team Admins so they may add users to the team, and the other Key is the user&amp;rsquo;s account Recovery Key. The account Recovery Key allows users to add thier Share account to other devices and recover the current account if it&amp;rsquo;s ever lost.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SpiderOak Share Documentation on SpiderOak Share File Sharing Documentation</title>
+    <link>https://shareapp.tk/</link>
+    <description>Recent content in SpiderOak Share Documentation on SpiderOak Share File Sharing Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <copyright>© 2019 &lt;a href=&#34;https://spideroak.com&#34;&gt;SpiderOak Inc.&lt;/a&gt; All rights reserved.</copyright>
+    <lastBuildDate>Fri, 09 Aug 2019 13:22:47 -0500</lastBuildDate>
+    
+	<atom:link href="https://shareapp.tk/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Prerequisites</title>
+      <link>https://shareapp.tk/server/1prerequisites.html</link>
+      <pubDate>Fri, 09 Aug 2019 13:22:47 -0500</pubDate>
+      
+      <guid>https://shareapp.tk/server/1prerequisites.html</guid>
+      <description>The following are required to run Share on-premise:
+ A way to run Docker images. An S3-compatible object store, accessible to the flow containers. In future versions of Share, the client may also connect directly to the object store using presigned requests . A domain name or two, with valid TLS certificate(s). An HTTPS reverse proxy, terminating TLS.  </description>
+    </item>
+    
+    <item>
+      <title>Obtaining Docker Images</title>
+      <link>https://shareapp.tk/server/2docker.html</link>
+      <pubDate>Fri, 09 Aug 2019 13:23:08 -0500</pubDate>
+      
+      <guid>https://shareapp.tk/server/2docker.html</guid>
+      <description>Make sure that your environment supports Docker and that Docker is installed. Be sure a Docker group exists on the system and that your user is part of it. If not, run sudo groupadd docker to create the group and sudo usermod -a -G docker $YOURUSERNAME (replacing $YOURUSERNAME with the username on your system) Run the following command and log in using the credentials supplied to you by the SpiderOak team.</description>
+    </item>
+    
+    <item>
+      <title>Generating Keys</title>
+      <link>https://shareapp.tk/server/3keys.html</link>
+      <pubDate>Fri, 09 Aug 2019 13:28:06 -0500</pubDate>
+      
+      <guid>https://shareapp.tk/server/3keys.html</guid>
+      <description>Flow uses cryptographic tokens to verify requests to the API. In order to run the flow application servers, you must generate a keypair and provide it to the servers via environment variables. This section describes how to generate the keypair, and save it to a Kubernetes Secret.
+$ docker run —rm -it -v $PWD/keyout:/keyout registry.spideroak.com/share-onprem/flowkeygen:latest /keyout1  This will create a directory called keyout in your current working directory, and output three files:</description>
+    </item>
+    
+    <item>
+      <title>Connection Information Files</title>
+      <link>https://shareapp.tk/server/4connection.html</link>
+      <pubDate>Fri, 09 Aug 2019 13:29:28 -0500</pubDate>
+      
+      <guid>https://shareapp.tk/server/4connection.html</guid>
+      <description>Flowblock needs to serve its Connection Information File (CIF). This file is a JSON that contains the URLs used for the block and store services. End users need the link to the CIF file in order to connect to this particular flow server.
+In order to generate the CIF configuration in flowblock, two tools must be used, flowcif and flowmergecifs.
+The first step is to create the directory ~/out/:
+mkdir out  Next, use flowcif to create a CIF file:</description>
+    </item>
+    
+    <item>
+      <title>Running Flowblock</title>
+      <link>https://shareapp.tk/server/5flowblock.html</link>
+      <pubDate>Fri, 09 Aug 2019 13:32:11 -0500</pubDate>
+      
+      <guid>https://shareapp.tk/server/5flowblock.html</guid>
+      <description>The simplest way to run flowblock is by invoking docker directly:
+$ docker run -e &amp;lt;ENV_VAR1&amp;gt;=&amp;lt;value&amp;gt; -p 8400:8400 -p 8401:8401 &amp;lt;flowblock_image&amp;gt;:&amp;lt;tag&amp;gt;  The following environment variables must be set (eg. using the -e option to docker):
+   Variable Description     FLOWBLOCK_OBJECT_STORE_BASE_URL The base URL of the S3-compatible API.   FLOWBLOCK_OBJECT_STORE_ACCESS_KEY The access key to use when accessing the S3 API.   FLOWBLOCK_OBJECT_STORE_SECRET_KEY The secret key to use when accessing the S3 API.</description>
+    </item>
+    
+    <item>
+      <title>Running Flowstore</title>
+      <link>https://shareapp.tk/server/6flowstore.html</link>
+      <pubDate>Fri, 09 Aug 2019 13:37:30 -0500</pubDate>
+      
+      <guid>https://shareapp.tk/server/6flowstore.html</guid>
+      <description>The simplest way to run flowstore is by invoking docker directly:
+$ docker run -e &amp;lt;ENV_VAR1&amp;gt;=&amp;lt;value&amp;gt; -p 8500:8500 -p 8501:8501 registry.spideroak.com/share-onprem/flowstore:latest  The following environment variables must be set (eg. using the -e option to docker):
+   Variable Description     FLOWSTORE_OBJECT_STORE_SECURE Whether or not the S3 API endpoint uses TLS.   FLOWSTORE_OBJECT_STORE_SECRET_KEY The secret key to use when accessing the S3 API.   FLOWSTORE_OBJECT_STORE_BLOCK_BUCKET_REGION S3 region to use.</description>
+    </item>
+    
+    <item>
+      <title>HTTPS Reverse Proxy</title>
+      <link>https://shareapp.tk/server/7reverseproxy.html</link>
+      <pubDate>Fri, 09 Aug 2019 13:42:53 -0500</pubDate>
+      
+      <guid>https://shareapp.tk/server/7reverseproxy.html</guid>
+      <description>The Share client application is configured to connect to flowblock and flowstore over HTTPS, at the address/port combinations you provide. It is possible to run the services on separate IP addresses, or both services on the same IP address (and same DNS domain name) on different ports. Either way, you must provide TLS termination by way of a reverse proxy.</description>
+    </item>
+    
+    <item>
+      <title>Adding Users to a Team</title>
+      <link>https://shareapp.tk/admin/team/1addusers.html</link>
+      <pubDate>Fri, 09 Aug 2019 14:54:54 -0500</pubDate>
+      
+      <guid>https://shareapp.tk/admin/team/1addusers.html</guid>
+      <description>Before adding a user to a Team, they must create a Share account. After account creation, a Team admin may then invite the user to the team. Once a user is added to a Team, admins of Shared Spaces may add the user to their Spaces.
+USER STEPS  The user must first create their account by installing and then launching the SpiderOak Share client. The client will lead the first-time user through creating an account.</description>
+    </item>
+    
+    <item>
+      <title>Removing Users from a Team</title>
+      <link>https://shareapp.tk/admin/team/2removeusers.html</link>
+      <pubDate>Fri, 09 Aug 2019 15:03:12 -0500</pubDate>
+      
+      <guid>https://shareapp.tk/admin/team/2removeusers.html</guid>
+      <description>Removing a user from a team will restrict the user from accessing their Personal Spaces and Shared Spaces associated with the team. (A removed user may be re-added to the team by an admin sending an invite request with the user&amp;rsquo;s Account Key.)
+How do I remove a user?  First, select the gear icon next to the Team name in the upper left corner of Share. (This is shown in the following screen shot to the right of the team name, &amp;ldquo;Test Team.</description>
+    </item>
+    
+    <item>
+      <title>Viewing Team Members</title>
+      <link>https://shareapp.tk/admin/team/3viewteam.html</link>
+      <pubDate>Fri, 09 Aug 2019 15:05:07 -0500</pubDate>
+      
+      <guid>https://shareapp.tk/admin/team/3viewteam.html</guid>
+      <description>Team admins may audit team members.
+How do I view Team members?  First, select the gear icon next to the Team name in the upper left corner of Share. (This is shown in the following screen shot to the right of the team name, &amp;ldquo;Test Team.&amp;rdquo;)  Next, select the &amp;ldquo;Team Directory&amp;rdquo; button.
+ Once the Team Directory is displayed, you&amp;rsquo;ll be able to see who is on your team.</description>
+    </item>
+    
+    <item>
+      <title>Promoting and Removing Team Admins</title>
+      <link>https://shareapp.tk/admin/team/4promotingteamadmin.html</link>
+      <pubDate>Fri, 09 Aug 2019 15:08:37 -0500</pubDate>
+      
+      <guid>https://shareapp.tk/admin/team/4promotingteamadmin.html</guid>
+      <description>Admins of a team are given the ability to promote users to team admins. Team admins may invite and remove members from the team, and promote other users to team admin. Admins may be promoted/demoted.
+How do I add a Team Admin?  First, select the gear icon next to the Team name in the upper left corner of Share. (This is shown in the following screen shot to the right of the team name, &amp;ldquo;Test Team.</description>
+    </item>
+    
+    <item>
+      <title>Viewing Space Members</title>
+      <link>https://shareapp.tk/admin/space/1viewmembers.html</link>
+      <pubDate>Fri, 09 Aug 2019 15:15:08 -0500</pubDate>
+      
+      <guid>https://shareapp.tk/admin/space/1viewmembers.html</guid>
+      <description>Users of a Space may be audited by the admins of that Space. (Note that a Space becomes a Shared Space once another team member is added to it. If no team members are added to a new Space, then the Space remains a Personal Space for the user who created the Space.)
+How do I view Space members?  First, select the correct Space via the &amp;ldquo;Shared Spaces&amp;rdquo;. (&amp;ldquo;Test Space&amp;rdquo; is selected in the screen shot below.</description>
+    </item>
+    
+    <item>
+      <title>Adding Members to and Removing Members from a Space</title>
+      <link>https://shareapp.tk/admin/space/2addingmembers.html</link>
+      <pubDate>Fri, 09 Aug 2019 15:19:21 -0500</pubDate>
+      
+      <guid>https://shareapp.tk/admin/space/2addingmembers.html</guid>
+      <description>Managing Space membership by adding and removing Team Members from Spaces ensures that only the desired team members have access to shared data. A Space admin may add a Team Member to a Shared Space, or a personal space, but when the Team Member is added to a personal space, it becomes a Shared Space. (A Space where the creator is the only member remains a Personal Space, but when another team member is added to the space it becomes a &amp;ldquo;Shared Space&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>Promote a Member to a Space Admin</title>
+      <link>https://shareapp.tk/admin/space/3spaceadmin.html</link>
+      <pubDate>Fri, 09 Aug 2019 15:23:06 -0500</pubDate>
+      
+      <guid>https://shareapp.tk/admin/space/3spaceadmin.html</guid>
+      <description>Space admins have the ability to add, remove, and promote fellow members to admins within the given Space. A Space admin cannot add, remove, or promote members on the team level.
+How do I promote a member to a Space Admin?  Navigate to the correct Shared Space. (You must be in the space to administer it, and users must be members to be promoted.)
+ In the Shared Space, select the dropdown arrow next to the Space name above, and then select &amp;ldquo;Space Members.</description>
+    </item>
+    
+    <item>
+      <title>Team URLs</title>
+      <link>https://shareapp.tk/user/installation/1teamurl.html</link>
+      <pubDate>Fri, 09 Aug 2019 15:41:15 -0500</pubDate>
+      
+      <guid>https://shareapp.tk/user/installation/1teamurl.html</guid>
+      <description>SpiderOak Share can connect to either SpiderOak’s default back end (which is offered as a Software as a Service product), or a back end hosted locally (also known as on-prem.) All users install and use the same SpiderOak Share application regardless of whether they connect to a locally or remotely hosted back end. However, user accounts must be hosted on the same backed as the team the user wishes to join, therefore, teams are assigned URLs that point to the correct back end.</description>
+    </item>
+    
+    <item>
+      <title>Creating an Account</title>
+      <link>https://shareapp.tk/user/installation/2createaccount.html</link>
+      <pubDate>Fri, 09 Aug 2019 15:46:05 -0500</pubDate>
+      
+      <guid>https://shareapp.tk/user/installation/2createaccount.html</guid>
+      <description>Account creation must occur before a user can join a team, join a Space and start collaborating with other Team Members. SpiderOak Share uses a unique system during account creation to link your account to your keys. One Key is an Account ID key that is shared with the Team Admins so they may add users to the team, and the other Key is the user&amp;rsquo;s account Recovery Key. The account Recovery Key allows users to add thier Share account to other devices and recover the current account if it&amp;rsquo;s ever lost.</description>
+    </item>
+    
+    <item>
+      <title>Joining a Team</title>
+      <link>https://shareapp.tk/user/2jointeam.html</link>
+      <pubDate>Fri, 09 Aug 2019 15:50:20 -0500</pubDate>
+      
+      <guid>https://shareapp.tk/user/2jointeam.html</guid>
+      <description>SpiderOak Share allows a user to be part of multiple teams. Immediately after account creation the user needs to either Create a Team or Add a Team to their account. Most Users will Add a Team. Adding a Team can be achieved by inputting the proper Team URL into the applicable field and selecting the &amp;ldquo;Add Team&amp;rdquo; button.
+How do I join a SpiderOak Share Team?  Once the user has completed the account sign up, they will be greeted with a page where they may request to Add a Team or Create a Team.</description>
+    </item>
+    
+    <item>
+      <title>Create a Team</title>
+      <link>https://shareapp.tk/user/3createteam.html</link>
+      <pubDate>Fri, 09 Aug 2019 15:53:54 -0500</pubDate>
+      
+      <guid>https://shareapp.tk/user/3createteam.html</guid>
+      <description>Currently, creating a Team within SpiderOak Share requires a Setup URL, which will navigate your Team to the correct server and back-end. Team URLs and Setup URLs share information and look similar, but their functions are different. Providing SpiderOak share the correct Setup URL ensures that your Team Members can connect to the correct Shared Spaces and start collaborating. Creating a Team requires an active account and the Setup URL, which should be attained from your internal IT team.</description>
+    </item>
+    
+    <item>
+      <title>Create a Space</title>
+      <link>https://shareapp.tk/user/4createspace.html</link>
+      <pubDate>Fri, 09 Aug 2019 15:57:41 -0500</pubDate>
+      
+      <guid>https://shareapp.tk/user/4createspace.html</guid>
+      <description>A &amp;ldquo;Space&amp;rdquo; is where the action is! Spaces can be Shared Spaces, with several users, or Personal Spaces, with only one user. Spaces are a replacement for networked drives, shared folders, and server backups. Like these older storage solutions, Spaces contain user-selected data, including historical versions of the data. Personal Spaces are ideal for important files that are intended only for the creator or current owner of the file. Shared Spaces are ideal for files that require input from several team members, are being edited and expanded by a group of users, or need to be securely distributed across a team.</description>
+    </item>
+    
+    <item>
+      <title>Adding and Removing Members From a Space</title>
+      <link>https://shareapp.tk/user/5adduserstospace.html</link>
+      <pubDate>Fri, 09 Aug 2019 15:59:24 -0500</pubDate>
+      
+      <guid>https://shareapp.tk/user/5adduserstospace.html</guid>
+      <description>Managing Space membership by adding and removing Team Members from Spaces ensures that only the desired team members have access to shared data. A Space admin may add a Team Member to a Shared Space, or a personal space, but when the Team Member is added to a personal space, it becomes a Shared Space. (A Space where the creator is the only member remains a Personal Space, but when another team member is added to the space it becomes a &amp;ldquo;Shared Space&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>Uploading Files to a Space</title>
+      <link>https://shareapp.tk/user/files/1uploading.html</link>
+      <pubDate>Fri, 09 Aug 2019 16:06:57 -0500</pubDate>
+      
+      <guid>https://shareapp.tk/user/files/1uploading.html</guid>
+      <description>Uploading data to a Space requires an account to be a member of the Team and the Space. Team Members may upload documents and important files to Personal and Shared Spaces. Once a file is uploaded to a Space, it may be download and edited to create a new version of the file or removed entirely by any of the Space occupants.
+How do I upload a file?  First, select the correct Space.</description>
+    </item>
+    
+    <item>
+      <title>Downloading, Saving, and Pushing Changes to Uploaded Files</title>
+      <link>https://shareapp.tk/user/files/2downloading.html</link>
+      <pubDate>Fri, 09 Aug 2019 16:09:53 -0500</pubDate>
+      
+      <guid>https://shareapp.tk/user/files/2downloading.html</guid>
+      <description>SpiderOak Share is intended to make secure collaboration simple. Users upload files to a secure Space and choose to allow Team Members access. SpiderOak Share presents a &amp;ldquo;File State&amp;rdquo; to show users when changes have been made or when immediate attention is necessary. The most common file state is the &amp;ldquo;Green Check Mark&amp;rdquo; (shown below) which indicates that the local file is up to date and there are no newer versions available for download.</description>
+    </item>
+    
+    <item>
+      <title>Conflict Resolution</title>
+      <link>https://shareapp.tk/user/files/3conflictresolution.html</link>
+      <pubDate>Fri, 09 Aug 2019 16:18:56 -0500</pubDate>
+      
+      <guid>https://shareapp.tk/user/files/3conflictresolution.html</guid>
+      <description>A file conflict occurs when a user is actively editing a file and another Team Member commits changes to the same file.
+How do I resolve a conflict? The &amp;ldquo;Resolve&amp;rdquo; file state will appear to the right of the file name and show that this file is currently involved in a conflict. By clicking on the &amp;ldquo;Resolve&amp;rdquo; button, the user will be taken to the Conflict Resolution screen.
+The Conflict Resolution Screen will allow the user who most recently saved to select &amp;ldquo;Review&amp;rdquo; which will show the changes the Team Member had made.</description>
+    </item>
+    
+    <item>
+      <title>File Version and Reverting to a Previous Version</title>
+      <link>https://shareapp.tk/user/files/4versioning.html</link>
+      <pubDate>Fri, 09 Aug 2019 16:20:13 -0500</pubDate>
+      
+      <guid>https://shareapp.tk/user/files/4versioning.html</guid>
+      <description>SpiderOak Share retains file version history for all files uploaded to a Space. A file version is created any time a Space Member commits changes they&amp;rsquo;ve made to an uploaded file. This is extremely useful for when accidents occur such as incorrectly handled file conflicts, or erroneous edits cause a loss of information.
+How do I see file version history? File Version History is accessed by selecting the ellipsis (3 dots) drop down menu which is on the right of the file state icon.</description>
+    </item>
+    
+    <item>
+      <title>Deleting Files</title>
+      <link>https://shareapp.tk/user/files/5deletingfiles.html</link>
+      <pubDate>Fri, 09 Aug 2019 16:22:01 -0500</pubDate>
+      
+      <guid>https://shareapp.tk/user/files/5deletingfiles.html</guid>
+      <description>How do I delete a file?  First, select the correct Space. If no other Team Member has been added to this Space, it will be found under &amp;ldquo;Personal Spaces.&amp;rdquo; If other Team Members exist in this Space then it will be under the &amp;ldquo;Shared Spaces.&amp;rdquo;
+ Next, identify the file you wish to delete. Once you&amp;rsquo;ve found the file, select the ellipsis menu (3 dots) to the right of the file state icon and open the drop down menu.</description>
+    </item>
+    
+    <item>
+      <title>Chat</title>
+      <link>https://shareapp.tk/user/7chat.html</link>
+      <pubDate>Fri, 09 Aug 2019 16:25:02 -0500</pubDate>
+      
+      <guid>https://shareapp.tk/user/7chat.html</guid>
+      <description>Chat is offered within a Shared Space to facilitate ad-hoc conversations with Space Members. This is intended to allow Space members to discuss possible file conflicts and additional collaborative ideas. Just like the files that are uploaded to a SpiderOak Share, the Chat messages are encrypted locally before being submitted to the server, and only distributed to Space members.
+How do I chat?  Simply access the Space Settings drop down menu and select the &amp;ldquo;Chat&amp;rdquo; option.</description>
+    </item>
+    
+    <item>
+      <title>General Troubleshooting</title>
+      <link>https://shareapp.tk/user/troubleshooting/1generaltroubleshooting.html</link>
+      <pubDate>Fri, 09 Aug 2019 16:30:47 -0500</pubDate>
+      
+      <guid>https://shareapp.tk/user/troubleshooting/1generaltroubleshooting.html</guid>
+      <description>Files Not Loading If you&amp;rsquo;re experiencing files not loading within a Space, the first step is to close the application completely by quitting Share, and then relaunching Share. It may help to restart your device.
+Files Not Loading After Joining a New Space/Team Due to our encryption, the initial key sharing can only take place when a members of the Team/Space with the encryption key is online at the same time as the new member to the Team/Space.</description>
+    </item>
+    
+    <item>
+      <title>Uninstalling and Reinstalling SpiderOak Share</title>
+      <link>https://shareapp.tk/user/troubleshooting/2uninstall.html</link>
+      <pubDate>Fri, 09 Aug 2019 16:32:16 -0500</pubDate>
+      
+      <guid>https://shareapp.tk/user/troubleshooting/2uninstall.html</guid>
+      <description>If you want to remove all traces of SpiderOak Share from your computer, uninstall it for troubleshooting purposes, or if you are trying to sign in to a new account and the application is still trying to connect to your old account, you will need to uninstall Share from your device (or devices.)
+Personal Spaces Keep in mind, uninstalling SpiderOak Share this way will remove any/all Personal Spaces associated with this device.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://shareapp.tk/test.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://shareapp.tk/test.html</guid>
+      <description>Test Just two good ol&amp;rsquo; boys Never meanin&amp;rsquo; no harm. Beats all you&amp;rsquo;ve ever saw been in trouble with the law since the day they was born. Fish don&amp;rsquo;t fry in the kitchen and beans don&amp;rsquo;t burn on the grill. Took a whole lotta tryin&amp;rsquo; just to get up that hill? He&amp;rsquo;s gainin&amp;rsquo; on you so you better look alive. He busy revin&amp;rsquo; up his Powerful Mach 5. The Brady Bunch the Brady Bunch that&amp;rsquo;s the way we all became the Brady Bunch.</description>
+    </item>
+    
+  </channel>
+</rss>

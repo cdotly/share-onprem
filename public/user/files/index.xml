@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Working with Files on SpiderOak Share File Sharing Documentation</title>
+    <link>https://shareapp.tk/user/files.html</link>
+    <description>Recent content in Working with Files on SpiderOak Share File Sharing Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <copyright>© 2019 &lt;a href=&#34;https://spideroak.com&#34;&gt;SpiderOak Inc.&lt;/a&gt; All rights reserved.</copyright>
+    <lastBuildDate>Fri, 09 Aug 2019 16:03:30 -0500</lastBuildDate>
+    
+	<atom:link href="https://shareapp.tk/user/files/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Uploading Files to a Space</title>
+      <link>https://shareapp.tk/user/files/1uploading.html</link>
+      <pubDate>Fri, 09 Aug 2019 16:06:57 -0500</pubDate>
+      
+      <guid>https://shareapp.tk/user/files/1uploading.html</guid>
+      <description>Uploading data to a Space requires an account to be a member of the Team and the Space. Team Members may upload documents and important files to Personal and Shared Spaces. Once a file is uploaded to a Space, it may be download and edited to create a new version of the file or removed entirely by any of the Space occupants.
+How do I upload a file?  First, select the correct Space.</description>
+    </item>
+    
+    <item>
+      <title>Downloading, Saving, and Pushing Changes to Uploaded Files</title>
+      <link>https://shareapp.tk/user/files/2downloading.html</link>
+      <pubDate>Fri, 09 Aug 2019 16:09:53 -0500</pubDate>
+      
+      <guid>https://shareapp.tk/user/files/2downloading.html</guid>
+      <description>SpiderOak Share is intended to make secure collaboration simple. Users upload files to a secure Space and choose to allow Team Members access. SpiderOak Share presents a &amp;ldquo;File State&amp;rdquo; to show users when changes have been made or when immediate attention is necessary. The most common file state is the &amp;ldquo;Green Check Mark&amp;rdquo; (shown below) which indicates that the local file is up to date and there are no newer versions available for download.</description>
+    </item>
+    
+    <item>
+      <title>Conflict Resolution</title>
+      <link>https://shareapp.tk/user/files/3conflictresolution.html</link>
+      <pubDate>Fri, 09 Aug 2019 16:18:56 -0500</pubDate>
+      
+      <guid>https://shareapp.tk/user/files/3conflictresolution.html</guid>
+      <description>A file conflict occurs when a user is actively editing a file and another Team Member commits changes to the same file.
+How do I resolve a conflict? The &amp;ldquo;Resolve&amp;rdquo; file state will appear to the right of the file name and show that this file is currently involved in a conflict. By clicking on the &amp;ldquo;Resolve&amp;rdquo; button, the user will be taken to the Conflict Resolution screen.
+The Conflict Resolution Screen will allow the user who most recently saved to select &amp;ldquo;Review&amp;rdquo; which will show the changes the Team Member had made.</description>
+    </item>
+    
+    <item>
+      <title>File Version and Reverting to a Previous Version</title>
+      <link>https://shareapp.tk/user/files/4versioning.html</link>
+      <pubDate>Fri, 09 Aug 2019 16:20:13 -0500</pubDate>
+      
+      <guid>https://shareapp.tk/user/files/4versioning.html</guid>
+      <description>SpiderOak Share retains file version history for all files uploaded to a Space. A file version is created any time a Space Member commits changes they&amp;rsquo;ve made to an uploaded file. This is extremely useful for when accidents occur such as incorrectly handled file conflicts, or erroneous edits cause a loss of information.
+How do I see file version history? File Version History is accessed by selecting the ellipsis (3 dots) drop down menu which is on the right of the file state icon.</description>
+    </item>
+    
+    <item>
+      <title>Deleting Files</title>
+      <link>https://shareapp.tk/user/files/5deletingfiles.html</link>
+      <pubDate>Fri, 09 Aug 2019 16:22:01 -0500</pubDate>
+      
+      <guid>https://shareapp.tk/user/files/5deletingfiles.html</guid>
+      <description>How do I delete a file?  First, select the correct Space. If no other Team Member has been added to this Space, it will be found under &amp;ldquo;Personal Spaces.&amp;rdquo; If other Team Members exist in this Space then it will be under the &amp;ldquo;Shared Spaces.&amp;rdquo;
+ Next, identify the file you wish to delete. Once you&amp;rsquo;ve found the file, select the ellipsis menu (3 dots) to the right of the file state icon and open the drop down menu.</description>
+    </item>
+    
+  </channel>
+</rss>

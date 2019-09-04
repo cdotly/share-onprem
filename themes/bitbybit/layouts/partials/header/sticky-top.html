@@ -1,0 +1,21 @@
+
+<div class="sticky-top ">
+        <div class="sticky-top-inner">
+            {{- partial "brand/product-logo.html" . -}}
+
+
+            <span class="product-title-long"> <a class="blackout" href="{{ .Site.BaseURL }}">{{ .Site.Params.product  }}
+                    {{ .Site.Params.segment }}</a></span>
+
+            <span class="product-title">{{ .Site.Params.product }}</span>
+            <span class="product-segment">{{ .Site.Params.segment }}</span>
+            
+
+            <!-- spideroak branch -->
+            <span class="so-branch">{{ .Site.Params.branch }}</span>
+
+        </div>
+           
+        <hr class="full-width" />
+
+</div>

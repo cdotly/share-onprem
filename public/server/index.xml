@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Server Setup on SpiderOak Share File Sharing Documentation</title>
+    <link>https://shareapp.tk/server.html</link>
+    <description>Recent content in Server Setup on SpiderOak Share File Sharing Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <copyright>© 2019 &lt;a href=&#34;https://spideroak.com&#34;&gt;SpiderOak Inc.&lt;/a&gt; All rights reserved.</copyright>
+    <lastBuildDate>Fri, 09 Aug 2019 12:39:48 -0500</lastBuildDate>
+    
+	<atom:link href="https://shareapp.tk/server/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Prerequisites</title>
+      <link>https://shareapp.tk/server/1prerequisites.html</link>
+      <pubDate>Fri, 09 Aug 2019 13:22:47 -0500</pubDate>
+      
+      <guid>https://shareapp.tk/server/1prerequisites.html</guid>
+      <description>The following are required to run Share on-premise:
+ A way to run Docker images. An S3-compatible object store, accessible to the flow containers. In future versions of Share, the client may also connect directly to the object store using presigned requests . A domain name or two, with valid TLS certificate(s). An HTTPS reverse proxy, terminating TLS.  </description>
+    </item>
+    
+    <item>
+      <title>Obtaining Docker Images</title>
+      <link>https://shareapp.tk/server/2docker.html</link>
+      <pubDate>Fri, 09 Aug 2019 13:23:08 -0500</pubDate>
+      
+      <guid>https://shareapp.tk/server/2docker.html</guid>
+      <description>Make sure that your environment supports Docker and that Docker is installed. Be sure a Docker group exists on the system and that your user is part of it. If not, run sudo groupadd docker to create the group and sudo usermod -a -G docker $YOURUSERNAME (replacing $YOURUSERNAME with the username on your system) Run the following command and log in using the credentials supplied to you by the SpiderOak team.</description>
+    </item>
+    
+    <item>
+      <title>Generating Keys</title>
+      <link>https://shareapp.tk/server/3keys.html</link>
+      <pubDate>Fri, 09 Aug 2019 13:28:06 -0500</pubDate>
+      
+      <guid>https://shareapp.tk/server/3keys.html</guid>
+      <description>Flow uses cryptographic tokens to verify requests to the API. In order to run the flow application servers, you must generate a keypair and provide it to the servers via environment variables. This section describes how to generate the keypair, and save it to a Kubernetes Secret.
+$ docker run —rm -it -v $PWD/keyout:/keyout registry.spideroak.com/share-onprem/flowkeygen:latest /keyout1  This will create a directory called keyout in your current working directory, and output three files:</description>
+    </item>
+    
+    <item>
+      <title>Connection Information Files</title>
+      <link>https://shareapp.tk/server/4connection.html</link>
+      <pubDate>Fri, 09 Aug 2019 13:29:28 -0500</pubDate>
+      
+      <guid>https://shareapp.tk/server/4connection.html</guid>
+      <description>Flowblock needs to serve its Connection Information File (CIF). This file is a JSON that contains the URLs used for the block and store services. End users need the link to the CIF file in order to connect to this particular flow server.
+In order to generate the CIF configuration in flowblock, two tools must be used, flowcif and flowmergecifs.
+The first step is to create the directory ~/out/:
+mkdir out  Next, use flowcif to create a CIF file:</description>
+    </item>
+    
+    <item>
+      <title>Running Flowblock</title>
+      <link>https://shareapp.tk/server/5flowblock.html</link>
+      <pubDate>Fri, 09 Aug 2019 13:32:11 -0500</pubDate>
+      
+      <guid>https://shareapp.tk/server/5flowblock.html</guid>
+      <description>The simplest way to run flowblock is by invoking docker directly:
+$ docker run -e &amp;lt;ENV_VAR1&amp;gt;=&amp;lt;value&amp;gt; -p 8400:8400 -p 8401:8401 &amp;lt;flowblock_image&amp;gt;:&amp;lt;tag&amp;gt;  The following environment variables must be set (eg. using the -e option to docker):
+   Variable Description     FLOWBLOCK_OBJECT_STORE_BASE_URL The base URL of the S3-compatible API.   FLOWBLOCK_OBJECT_STORE_ACCESS_KEY The access key to use when accessing the S3 API.   FLOWBLOCK_OBJECT_STORE_SECRET_KEY The secret key to use when accessing the S3 API.</description>
+    </item>
+    
+    <item>
+      <title>Running Flowstore</title>
+      <link>https://shareapp.tk/server/6flowstore.html</link>
+      <pubDate>Fri, 09 Aug 2019 13:37:30 -0500</pubDate>
+      
+      <guid>https://shareapp.tk/server/6flowstore.html</guid>
+      <description>The simplest way to run flowstore is by invoking docker directly:
+$ docker run -e &amp;lt;ENV_VAR1&amp;gt;=&amp;lt;value&amp;gt; -p 8500:8500 -p 8501:8501 registry.spideroak.com/share-onprem/flowstore:latest  The following environment variables must be set (eg. using the -e option to docker):
+   Variable Description     FLOWSTORE_OBJECT_STORE_SECURE Whether or not the S3 API endpoint uses TLS.   FLOWSTORE_OBJECT_STORE_SECRET_KEY The secret key to use when accessing the S3 API.   FLOWSTORE_OBJECT_STORE_BLOCK_BUCKET_REGION S3 region to use.</description>
+    </item>
+    
+    <item>
+      <title>HTTPS Reverse Proxy</title>
+      <link>https://shareapp.tk/server/7reverseproxy.html</link>
+      <pubDate>Fri, 09 Aug 2019 13:42:53 -0500</pubDate>
+      
+      <guid>https://shareapp.tk/server/7reverseproxy.html</guid>
+      <description>The Share client application is configured to connect to flowblock and flowstore over HTTPS, at the address/port combinations you provide. It is possible to run the services on separate IP addresses, or both services on the same IP address (and same DNS domain name) on different ports. Either way, you must provide TLS termination by way of a reverse proxy.</description>
+    </item>
+    
+  </channel>
+</rss>

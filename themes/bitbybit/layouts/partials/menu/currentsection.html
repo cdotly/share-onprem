@@ -1,0 +1,92 @@
+
+<div class="menu menu-section">
+
+
+
+
+
+    {{ $current := . }}
+    {{ $name := .Name }}
+    {{ $Section := .Section }}
+    {{ $CurrentSection := .CurrentSection }}
+    {{ $currentPages := and .CurrentSection .Pages }}
+    {{ $pages := .Site.Pages }}
+    {{ $nested := where $pages "Type" "nested" }}
+
+    {{ if .IsHome }}
+        <div class="section-h">{{ .Site.Title }}</div>
+
+        {{- partial "menu/firstsections.html" . -}}
+
+    <!-- curent Section -->
+    {{ else if eq .Section $Section }}
+
+        <div class="section-h" >{{ .FirstSection.Title }}</div>
+        <ul>
+
+            
+            <!-- section level pages  -->
+           {{ if eq $currentPages .FirstSection.Pages }}
+
+                {{ range (( $currentPages | union .Pages ) | union ((.Pages | union .Sections) | union (.FirstSection.Pages | union .FirstSection.Sections))).ByWeight }}
+
+                <li class="{{ if eq .Name $name }} active {{ end }}">
+                    <a href="{{ .URL }}">
+                        <span class="">{{ .Name }}</span>
+                    </a>
+                </li>
+                {{ end }}
+
+            <!-- Nested Nested Sections -->
+
+                {{ else if and $current (or (not .Parent) (not .Sections)) }}
+                    
+                    {{ range ((.Pages | union .Sections | union (.FirstSection.Pages | union .FirstSection.Sections))).ByWeight  }}
+
+                        {{ if eq (and .Pages $nested) (and .Pages (and (and (not .FirstSection.Pages) (not .Sections)))) }}
+                        <ul class="nested" > 
+                            <li class="{{ if eq .Name $name }} active {{ end }}" >
+                                <a href="{{ .URL }}">
+                                    <span class="">{{ .Name }}</span>
+                                </a>
+                            </li>
+                        </ul>
+                        
+                        {{ else if ne $current $nested }}
+                        <li class="{{ if eq .Name $name }} active {{ end }}" >
+                            <a href="{{ .URL }}">
+                                <span class="">{{ .Name }}</span>
+                            </a>
+                        </li>
+                        {{ end }}
+                    {{end}}
+
+
+                <!-- First Sections -->
+                {{ else if ne $CurrentSection .FirstSection }}
+                    {{ range (.FirstSection.Pages | union .FirstSection.Sections).ByWeight }}
+
+                    <li class="{{ if eq .Name $name }} active {{ end }}">
+                        <a href="{{ .URL }}">
+                            <span class="">{{ .Name }}</span>
+                        </a>
+                    </li>
+                    {{ end }}
+                
+                {{ else }}
+                    {{ range (.Pages | union .Sections ).ByWeight }}
+                    
+                    <li class="{{ if eq .Name $name }} active {{ end }}">
+                        <a href="{{ .URL }}">
+                            <span class="">{{ .Name }}</span>
+                        </a>
+                    </li>
+                    {{ end }}
+                {{ end }}
+
+               
+
+        </ul>         
+        
+    {{ end }}
+</div>

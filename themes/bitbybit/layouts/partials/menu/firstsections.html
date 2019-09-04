@@ -1,0 +1,13 @@
+<nav class="menu menu-firstsection">
+    <!-- This is the top level nav. -->
+    {{ $currentPage := . }}
+    {{ range .Site.Menus.main }}
+    <ul>
+        <li>
+            <a class="{{if or ($currentPage.IsMenuCurrent `main` .) ($currentPage.HasMenuCurrent `main` .) }} active{{end}}"
+                href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
+        </li>
+    </ul> 
+        
+    {{ end }}
+</nav>

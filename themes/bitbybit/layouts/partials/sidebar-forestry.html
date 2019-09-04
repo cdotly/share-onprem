@@ -1,0 +1,23 @@
+This is the sidebar-forestry.html.
+
+{{- $currentPage := . -}}
+{{- $sectionMenu := index $.Site.Menus .Section -}}
+{{- $currentSection := .CurrentSection.Title -}}
+{{- $currentSectionMenu := index $.Site.Menus $currentSection -}}
+{{- $menu := cond (not (eq $currentSectionMenu "nil")) $currentSectionMenu $sectionMenu -}}
+{{- with $menu -}}
+<div class="docs-nav-items">
+    {{- range . -}}
+    <h3>{{ .Pre }}{{ .Name }}{{ .Post }}</h3>
+    <ul>
+        {{- range .Children -}}
+        <li>{{ .Pre }}<a href="{{ .URL | relURL }}" {{ if or ($.IsMenuCurrent .Menu .) ($.HasMenuCurrent .Menu .) }}
+                class="active" {{ end }}>{{ .Name }}</a>{{ .Post }}</li>
+        {{- if $.IsMenuCurrent .Menu . -}}
+        {{-  .CurrentSection.Title -}}
+        {{- end -}}
+        {{- end -}}
+    </ul>
+    {{- end -}}
+</div>
+{{- end -}}

@@ -1,0 +1,59 @@
+
+defaultContentLanguage = "en"
+languageCode = "en-US"
+# languageCode = "en"
+
+baseurl = "https://shareapp.tk"
+title = "SpiderOak Share File Sharing Documentation"
+copyright = "© 2019 <a href=\"https://spideroak.com\">SpiderOak Inc.</a> All rights reserved."
+
+
+theme = "bitbybit"
+metaDataFormat = "yaml"
+
+enableRobotsTXT = "true"
+
+# For search functionality
+# [outputs]
+# home = [ "HTML", "RSS", "JSON" ]
+
+# Allow references to index.md in offline mode
+# Do not set baseURL
+relativeURLs = "true"
+uglyURLs = "true"
+
+# sectionPagesMenu = "main"
+
+[menu]
+
+  [[menu.main]]
+    identifier = "server"
+    name = "Part One: Server Setup"
+    title = "Part One: Server Setup"
+    url = "/server/"
+    alias = "/server"
+    weight = 100
+
+  [[menu.main]]
+    identifier = "admin"
+    name = "Part Two: Administrative"
+    title = "Part Two: Administrative"
+    url = "/admin/"
+    alias = "/admin"
+    weight = 200
+
+  [[menu.main]]
+    identifier = "user"
+    name = "Part Three: End User"
+    title = "Part Three: End User"
+    url = "/user/"
+    alias = "/user"
+    weight = 300
+
+[params]
+  author = "SpiderOak Inc"
+  branch = "SpiderOak Technology"
+  product = "Share File Sharing"
+  segment = "App Documentation"
+  # description = "SpiderOak Share File Sharing application documentation setup, installation, and support guide for admins and end users."
+  showVisitedLinks = true

@@ -1,0 +1,626 @@
+/* Graphik
+-------------------------------------------------- */
+
+/* Graphik */
+/*
+        This font software is the property of Commercial Type.
+
+        You may not modify the font software, use it on another website, or install it on a computer.
+
+        License information is available at http://commercialtype.com/eula
+        For more information please visit Commercial Type at http://commercialtype.com or email us at info[at]commercialtype.com
+
+        Copyright (C) 2017 Schwartzco Inc.
+        License: 1704-MFFXUW
+*/
+
+body {
+  -moz-font-feature-settings: "liga", "kern";
+  -moz-font-feature-settings:"liga=1, kern=1";
+  -ms-font-feature-settings:"liga", "kern";
+  -o-font-feature-settings:"liga", "kern";
+  -webkit-font-feature-settings:"liga", "kern";
+  font-feature-settings: "liga", "kern";
+}
+
+/* Graphik Semibold */
+@font-face {
+  font-family: 'Graphik LC Web';
+  src: url('../fonts/graphik/Graphik-Semibold-Web.eot');
+  src: url('../fonts/graphik/Graphik-Semibold-Web.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/graphik/Graphik-Semibold-Web.woff2') format('woff2'),
+       url('../fonts/graphik/Graphik-Semibold-Web.woff') format('woff');
+  font-weight:  600;
+  font-style:   normal;
+  font-stretch: normal;
+}
+
+.Graphik-Semibold-Web {
+  font-family: 'Graphik LC Web';
+  font-weight:  600;
+  font-style:   normal;
+  font-stretch: normal;
+}
+
+
+/* Graphik Medium */
+@font-face {
+  font-family: 'Graphik Web';
+  src: url('../fonts/graphik/Graphik-Medium-Web.eot');
+  src: url('../fonts/graphik/Graphik-Medium-Web.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/graphik/Graphik-Medium-Web.woff2') format('woff2'),
+       url('../fonts/graphik/Graphik-Medium-Web.woff') format('woff');
+  font-weight:  500;
+  font-style:   normal;
+  font-stretch: normal;
+}
+
+.Graphik-Medium-Web {
+  font-family: 'Graphik Web';
+  font-weight:  500;
+  font-style:   normal;
+  font-stretch: normal;
+}
+
+
+/* Graphik Regular */
+@font-face {
+  font-family: 'Graphik Web';
+  src: url('../fonts/graphik/Graphik-Regular-Web.eot');
+  src: url('../fonts/graphik/Graphik-Regular-Web.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/graphik/Graphik-Regular-Web.woff2') format('woff2'),
+       url('../fonts/graphik/Graphik-Regular-Web.woff') format('woff');
+  font-weight:  400;
+  font-style:   normal;
+  font-stretch: normal;
+}
+
+.Graphik-Regular-Web {
+  font-family: 'Graphik Web';
+  font-weight:  400;
+  font-style:   normal;
+  font-stretch: normal;
+}
+
+/* Graphik Regular Italic */
+@font-face {
+  font-family: 'Graphik Web';
+  src: url('../fonts/graphik/Graphik-RegularItalic-Web.eot');
+  src: url('../fonts/graphik/Graphik-RegularItalic-Web.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/graphik/Graphik-RegularItalic-Web.woff2') format('woff2'),
+       url('../fonts/graphik/Graphik-RegularItalic-Web.woff') format('woff');
+  font-weight:  400;
+  font-style:   italic;
+  font-stretch: normal;
+}
+
+.Graphik-RegularItalic-Web {
+  font-family: 'Graphik Web';
+  font-weight:  400;
+  font-style:   italic;
+  font-stretch: normal;
+}
+
+
+/* Graphik Light */
+@font-face {
+  font-family: 'Graphik Web';
+  src: url('Graphik-Light-Web.eot');
+  src: url('Graphik-Light-Web.eot?#iefix') format('embedded-opentype'),
+       url('Graphik-Light-Web.woff2') format('woff2'),
+       url('Graphik-Light-Web.woff') format('woff');
+  font-weight:  300;
+  font-style:   normal;
+  font-stretch: normal;
+}
+
+.Graphik-Light-Web {
+  font-family: 'Graphik Web';
+  font-weight:  300;
+  font-style:   normal;
+  font-stretch: normal;
+}
+
+
+/* Graphik Light Italic */
+@font-face {
+  font-family: 'Graphik Web';
+  src: url('Graphik-LightItalic-Web.eot');
+  src: url('Graphik-LightItalic-Web.eot?#iefix') format('embedded-opentype'),
+       url('Graphik-LightItalic-Web.woff2') format('woff2'),
+       url('Graphik-LightItalic-Web.woff') format('woff');
+  font-weight:  300;
+  font-style:   italic;
+  font-stretch: normal;
+}
+
+.Graphik-LightItalic-Web {
+  font-family: 'Graphik Web';
+  font-weight:  300;
+  font-style:   italic;
+  font-stretch: normal;
+}
+
+
+/* Graphik ExtraLightItalic */
+@font-face {
+  font-family: 'Graphik Web';
+  src: url('Graphik-ExtralightItalic-Web.eot');
+  src: url('Graphik-ExtralightItalic-Web.eot?#iefix') format('embedded-opentype'),
+       url('Graphik-ExtralightItalic-Web.woff2') format('woff2'),
+       url('Graphik-ExtralightItalic-Web.woff') format('woff');
+  font-weight:  200;
+  font-style:   italic;
+  font-stretch: normal;
+}
+
+.Graphik-ExtralightItalic-Web {
+  font-family: 'Graphik Web';
+  font-weight:  200;
+  font-style:   italic;
+  font-stretch: normal;
+}
+
+
+/* Graphik ExtraLight */
+/* 
+@font-face {
+  font-family: 'Graphik Web';
+  src: url('Graphik-Extralight-Web.eot');
+  src: url('Graphik-Extralight-Web.eot?#iefix') format('embedded-opentype'),
+       url('Graphik-Extralight-Web.woff2') format('woff2'),
+       url('Graphik-Extralight-Web.woff') format('woff');
+  font-weight:  200;
+  font-style:   normal;
+  font-stretch: normal;
+}
+
+.Graphik-Extralight-Web {
+  font-family: 'Graphik Web';
+  font-weight:  200;
+  font-style:   normal;
+  font-stretch: normal;
+}
+ */
+
+
+/* Roboto Mono
+-------------------------------------------------- */
+
+/* roboto-mono-regular */
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/roboto-mono-v7-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Roboto Mono'), local('RobotoMono-Regular'),
+       url('../fonts/roboto-mono-v7-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/roboto-mono-v7-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/roboto-mono-v7-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/roboto-mono-v7-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/roboto-mono-v7-latin-regular.svg#RobotoMono') format('svg'); /* Legacy iOS */
+}
+/* roboto-mono-500 */
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/roboto-mono-v7-latin-500.eot'); /* IE9 Compat Modes */
+  src: local('Roboto Mono Medium'), local('RobotoMono-Medium'),
+       url('../fonts/roboto-mono-v7-latin-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/roboto-mono-v7-latin-500.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/roboto-mono-v7-latin-500.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/roboto-mono-v7-latin-500.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/roboto-mono-v7-latin-500.svg#RobotoMono') format('svg'); /* Legacy iOS */
+}
+
+/* robotomono-400 {
+  font-family: 'Roboto Mono', 'Courier New', Courier, monospace;
+  font-style: normal;
+  font-weight: 400;
+} */
+
+
+
+/* 
+h3 .mono, 
+h4 {
+  font-family: 'Roboto Mono', 'Courier New', Courier, monospace;
+  text-transform: uppercase; 
+  letter-spacing: .4rem;
+  font-weight: 400; 
+  font-size: 1rem;
+  text-align: left;
+  margin-bottom: 10px; 
+} */
+
+
+
+/* styles
+-------------------------------------------------- */
+h1, h2, h3, h4 {
+  font-family: 'Graphik Web', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+  font-weight:  500;
+  font-style:   normal;
+  font-stretch: normal;
+  line-height: .95;
+}
+
+h1 {
+    letter-spacing: -.15rem;
+    margin-top: 2.5rem;
+    margin-left: -3px;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    letter-spacing: -.05rem;
+    margin-top: 3rem; 
+    margin-left: -2px;
+    font-size: 2.25rem;
+    margin-bottom: 1rem;
+
+}
+
+h3 {
+  letter-spacing: -.05rem;
+  margin-left: -2px; 
+  font-size: 1.75rem;
+  margin-bottom: .85rem;
+
+}
+
+h4 {
+  letter-spacing: -.05rem;
+  margin-left: -2px; 
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+
+}
+
+
+
+
+/* p */
+body, p {
+  font-family: 'Graphik Web', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400; 
+  line-height: 1.6; 
+  letter-spacing: .035rem;
+}
+
+p {
+  text-align: left;
+  padding-bottom: 1rem; 
+}
+
+
+
+/* roboto mono */
+a,
+.site-title,
+.so-branch,
+.product-title-long,
+.product-title, 
+.product-segment,
+.nav a, 
+.breadcrumbs,
+.section-h,  
+.so-tagline,
+.copyright {
+  font-family: 'Roboto Mono', 'Courier New', Courier, monospace;
+  font-style: normal;
+  font-weight: 400;
+    /* line-height: 1;  */
+
+}
+
+/* roboto mono regular */
+a, 
+.copyright, 
+.so-tagline {
+  letter-spacing: .02rem;
+  line-height: 1; 
+  text-transform: none;
+}
+
+/* roboto mono uppercase */
+.site-title, 
+.so-branch, 
+/* .product-title-long, */
+.nav a, 
+.product-title, 
+.product-segment, 
+.breadcrumbs, 
+.section-h {
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+
+.product-title-long .blackout, 
+.section-h  {
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.site-title, 
+.so-branch,
+.product-title-long,
+.product-title, 
+.product-segment,
+.breadcrumbs, 
+.so-tagline {
+  color: #303033;
+}
+
+
+/* copyright */
+.copyright {
+    font-size: .65rem;
+}
+.copyright, 
+.copyright a {
+  color: #30303075; 
+}
+
+
+
+/* links
+-------------------------------------------------- */
+/* link states */
+a {
+  color: #303033;
+  text-decoration: none; 
+}
+
+.main a:hover, 
+.main a:active {
+  color: #0000CC;
+  text-decoration: none; 
+}
+
+/* .default-animation, #header #logo-svg, #header #logo-svg path, #sidebar, #sidebar ul, #body, #body .padding, #body .sticky-top {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+} */
+
+.highlightable {    
+  padding: 1rem 0 1rem;
+  overflow: auto;
+  position: relative;
+}
+
+
+/* highlight */
+a.highlight {
+    line-height: 1.1;
+    /* display: inline-block;  */
+}
+
+
+a.highlight, 
+a.highlight:hover, 
+a.highlight:focus {
+    text-decoration: none;
+    outline: none;
+    outline: 0;
+}
+
+a.highlight::after {
+    display: block;
+    content: "";
+    height: 1px;
+    width: 0%;
+    background-color:#0000CC; /*#CE3B2F*/
+    -webkit-transition: width 0.5s ease;
+    -moz-transition: width 0.5s ease;
+    -ms-transition: width 0.5s ease;
+    transition: width 0.5s ease;
+}
+a.highlight:hover:after, 
+a.highlight:focus:after {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+/* blackout */
+a.blackout {
+    display: inline-block;
+    text-decoration: none;
+    outline: none;
+    outline: 0;
+}
+
+a.blackout:hover, 
+a.blackout:focus {
+    color: #ffffff !important;
+    background-color: #303033;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+.breadcrumbs a {
+    color: #30303370;
+}
+.breadcrumbs a.highlight:hover {
+    color: blue !important;
+}
+
+
+/* font sizes
+-------------------------------------------------- */
+/* mobile: xs, sm */
+@media screen and (max-width: 767px) {
+  .so-branch, 
+  .product-title, 
+  .product-segment, 
+  .product-title-long,
+  .nav a,  
+  .breadcrumbs {
+    font-size: .75rem;
+    line-height: 1.25;
+  }
+
+  footer, 
+  .so-tagline {
+    font-size: .65rem;
+    line-height: 1.25;
+  }
+
+  h1 {
+    font-size: 3rem;
+    padding-bottom: 1rem;
+  }
+
+  p {
+    font-size: .875rem;/* 14pt */
+    /* line-height: 1.25; */
+  }
+}
+
+
+/* tablet: md */
+@media screen and (min-width: 768px) {
+  .so-branch, 
+  .product-title, 
+  .product-segment, 
+  .product-title-long,
+  .nav a,
+  .section-h,  
+  .breadcrumbs {
+    font-size: .85rem;
+  }
+
+  .product-title, 
+  .so-branch,
+  .nav a, 
+  .section-h,  
+  .breadcrumbs {
+    line-height: 1.25;
+  }
+
+  footer, 
+  .so-tagline {
+    font-size: .75rem;
+    line-height: 1.1;
+    color: #303033; 
+  }
+
+  h1 {
+    font-size: 3rem;
+    padding-bottom: 1rem;
+  }
+
+  p {
+    font-size: .875rem;/* 14pt */
+  }
+}
+
+
+/* desktop: lg */
+@media (min-width: 992px) {
+  .product-title, 
+  .site-title, 
+  .so-branch, 
+  .product-title, 
+  .product-segment, 
+  .product-title-long, 
+  .nav a, 
+  .section-h, 
+  .breadcrumbs {
+    font-size: .875rem;
+    line-height: 1.25;
+  }
+
+  footer,
+  .so-tagline {
+    font-size: .75rem;
+    line-height: 1.25;
+    color: #303030; 
+  }
+
+  h1 {
+    font-size: 4rem;
+    padding-bottom: 1rem;
+
+  }
+
+  p {
+    font-size: 1rem; /* 16pt */
+  }
+}
+
+/* xl */
+@media (min-width: 1200px) {
+  .product-title, 
+  .site-title, 
+  .so-branch, 
+  .product-title, 
+  .product-segment, 
+  .product-title-long {
+    /* font-size: .9rem; */
+    /* line-height: 1.1; */
+  }
+  h1 {
+    font-size: 4rem;
+  }
+} 
+
+
+.section-h {
+  margin-bottom: 24px;
+}
+
+
+
+code, kbd, pre, samp, .hljs {
+  font-family: 'Roboto Mono', 'Courier New', Courier, monospace;
+  font-style: normal;
+  font-weight: 400;
+  /* line-height: 1;  */
+  letter-spacing: .02rem;
+}
+
+input {
+  font-family: 'Roboto Mono', 'Courier New', Courier, monospace;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px; 
+  line-height: 1; 
+  letter-spacing: .02rem;
+}
+
+
+code, kbd, pre, samp, .hljs,
+table, table th, table td  {
+  font-size: .875rem;
+}
+
+
+.code, kbd, pre, samp, .hljs {
+  line-height: 1.15rem;
+}
+
+
+
+/* table */
+table th {
+  text-transform: uppercase; 
+  letter-spacing: .4rem;
+  font-weight: 400; 
+}

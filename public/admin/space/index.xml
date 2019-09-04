@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Space Management on SpiderOak Share File Sharing Documentation</title>
+    <link>https://shareapp.tk/admin/space.html</link>
+    <description>Recent content in Space Management on SpiderOak Share File Sharing Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <copyright>© 2019 &lt;a href=&#34;https://spideroak.com&#34;&gt;SpiderOak Inc.&lt;/a&gt; All rights reserved.</copyright>
+    <lastBuildDate>Fri, 09 Aug 2019 15:12:16 -0500</lastBuildDate>
+    
+	<atom:link href="https://shareapp.tk/admin/space/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Viewing Space Members</title>
+      <link>https://shareapp.tk/admin/space/1viewmembers.html</link>
+      <pubDate>Fri, 09 Aug 2019 15:15:08 -0500</pubDate>
+      
+      <guid>https://shareapp.tk/admin/space/1viewmembers.html</guid>
+      <description>Users of a Space may be audited by the admins of that Space. (Note that a Space becomes a Shared Space once another team member is added to it. If no team members are added to a new Space, then the Space remains a Personal Space for the user who created the Space.)
+How do I view Space members?  First, select the correct Space via the &amp;ldquo;Shared Spaces&amp;rdquo;. (&amp;ldquo;Test Space&amp;rdquo; is selected in the screen shot below.</description>
+    </item>
+    
+    <item>
+      <title>Adding Members to and Removing Members from a Space</title>
+      <link>https://shareapp.tk/admin/space/2addingmembers.html</link>
+      <pubDate>Fri, 09 Aug 2019 15:19:21 -0500</pubDate>
+      
+      <guid>https://shareapp.tk/admin/space/2addingmembers.html</guid>
+      <description>Managing Space membership by adding and removing Team Members from Spaces ensures that only the desired team members have access to shared data. A Space admin may add a Team Member to a Shared Space, or a personal space, but when the Team Member is added to a personal space, it becomes a Shared Space. (A Space where the creator is the only member remains a Personal Space, but when another team member is added to the space it becomes a &amp;ldquo;Shared Space&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>Promote a Member to a Space Admin</title>
+      <link>https://shareapp.tk/admin/space/3spaceadmin.html</link>
+      <pubDate>Fri, 09 Aug 2019 15:23:06 -0500</pubDate>
+      
+      <guid>https://shareapp.tk/admin/space/3spaceadmin.html</guid>
+      <description>Space admins have the ability to add, remove, and promote fellow members to admins within the given Space. A Space admin cannot add, remove, or promote members on the team level.
+How do I promote a member to a Space Admin?  Navigate to the correct Shared Space. (You must be in the space to administer it, and users must be members to be promoted.)
+ In the Shared Space, select the dropdown arrow next to the Space name above, and then select &amp;ldquo;Space Members.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Help and Troubleshooting on SpiderOak Share File Sharing Documentation</title>
+    <link>https://shareapp.tk/user/troubleshooting.html</link>
+    <description>Recent content in Help and Troubleshooting on SpiderOak Share File Sharing Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <copyright>© 2019 &lt;a href=&#34;https://spideroak.com&#34;&gt;SpiderOak Inc.&lt;/a&gt; All rights reserved.</copyright>
+    <lastBuildDate>Fri, 09 Aug 2019 16:28:39 -0500</lastBuildDate>
+    
+	<atom:link href="https://shareapp.tk/user/troubleshooting/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>General Troubleshooting</title>
+      <link>https://shareapp.tk/user/troubleshooting/1generaltroubleshooting.html</link>
+      <pubDate>Fri, 09 Aug 2019 16:30:47 -0500</pubDate>
+      
+      <guid>https://shareapp.tk/user/troubleshooting/1generaltroubleshooting.html</guid>
+      <description>Files Not Loading If you&amp;rsquo;re experiencing files not loading within a Space, the first step is to close the application completely by quitting Share, and then relaunching Share. It may help to restart your device.
+Files Not Loading After Joining a New Space/Team Due to our encryption, the initial key sharing can only take place when a members of the Team/Space with the encryption key is online at the same time as the new member to the Team/Space.</description>
+    </item>
+    
+    <item>
+      <title>Uninstalling and Reinstalling SpiderOak Share</title>
+      <link>https://shareapp.tk/user/troubleshooting/2uninstall.html</link>
+      <pubDate>Fri, 09 Aug 2019 16:32:16 -0500</pubDate>
+      
+      <guid>https://shareapp.tk/user/troubleshooting/2uninstall.html</guid>
+      <description>If you want to remove all traces of SpiderOak Share from your computer, uninstall it for troubleshooting purposes, or if you are trying to sign in to a new account and the application is still trying to connect to your old account, you will need to uninstall Share from your device (or devices.)
+Personal Spaces Keep in mind, uninstalling SpiderOak Share this way will remove any/all Personal Spaces associated with this device.</description>
+    </item>
+    
+  </channel>
+</rss>

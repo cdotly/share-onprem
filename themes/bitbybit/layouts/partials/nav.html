@@ -1,0 +1,29 @@
+<nav class="nav">
+
+    <!-- The overlay -->
+    <div id="myNav" class="overlay">
+
+        <div class="nav-close-wrapper">
+            <!-- Button to close the overlay navigation -->
+            <a href="javascript:void(0)" class="nav-close" >
+                <span onclick="closeNav()">Close</span>
+                <!-- &times; -->
+            </a>
+        </div>
+
+        <!-- Overlay content -->
+        <div class="overlay-content">
+
+            {{- partial "menu/main.html" . -}}
+
+        </div><!-- overlay-content -->
+
+    </div><!-- overlay -->
+
+    
+    <!-- Use any element to open/show the overlay navigation menu -->
+    <a class="nav-open"> 
+        <span onclick="openNav()">Menu</span>
+    </a>
+
+</nav>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Team Management on SpiderOak Share File Sharing Documentation</title>
+    <link>https://shareapp.tk/admin/team.html</link>
+    <description>Recent content in Team Management on SpiderOak Share File Sharing Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <copyright>© 2019 &lt;a href=&#34;https://spideroak.com&#34;&gt;SpiderOak Inc.&lt;/a&gt; All rights reserved.</copyright>
+    <lastBuildDate>Fri, 09 Aug 2019 14:51:48 -0500</lastBuildDate>
+    
+	<atom:link href="https://shareapp.tk/admin/team/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Adding Users to a Team</title>
+      <link>https://shareapp.tk/admin/team/1addusers.html</link>
+      <pubDate>Fri, 09 Aug 2019 14:54:54 -0500</pubDate>
+      
+      <guid>https://shareapp.tk/admin/team/1addusers.html</guid>
+      <description>Before adding a user to a Team, they must create a Share account. After account creation, a Team admin may then invite the user to the team. Once a user is added to a Team, admins of Shared Spaces may add the user to their Spaces.
+USER STEPS  The user must first create their account by installing and then launching the SpiderOak Share client. The client will lead the first-time user through creating an account.</description>
+    </item>
+    
+    <item>
+      <title>Removing Users from a Team</title>
+      <link>https://shareapp.tk/admin/team/2removeusers.html</link>
+      <pubDate>Fri, 09 Aug 2019 15:03:12 -0500</pubDate>
+      
+      <guid>https://shareapp.tk/admin/team/2removeusers.html</guid>
+      <description>Removing a user from a team will restrict the user from accessing their Personal Spaces and Shared Spaces associated with the team. (A removed user may be re-added to the team by an admin sending an invite request with the user&amp;rsquo;s Account Key.)
+How do I remove a user?  First, select the gear icon next to the Team name in the upper left corner of Share. (This is shown in the following screen shot to the right of the team name, &amp;ldquo;Test Team.</description>
+    </item>
+    
+    <item>
+      <title>Viewing Team Members</title>
+      <link>https://shareapp.tk/admin/team/3viewteam.html</link>
+      <pubDate>Fri, 09 Aug 2019 15:05:07 -0500</pubDate>
+      
+      <guid>https://shareapp.tk/admin/team/3viewteam.html</guid>
+      <description>Team admins may audit team members.
+How do I view Team members?  First, select the gear icon next to the Team name in the upper left corner of Share. (This is shown in the following screen shot to the right of the team name, &amp;ldquo;Test Team.&amp;rdquo;)  Next, select the &amp;ldquo;Team Directory&amp;rdquo; button.
+ Once the Team Directory is displayed, you&amp;rsquo;ll be able to see who is on your team.</description>
+    </item>
+    
+    <item>
+      <title>Promoting and Removing Team Admins</title>
+      <link>https://shareapp.tk/admin/team/4promotingteamadmin.html</link>
+      <pubDate>Fri, 09 Aug 2019 15:08:37 -0500</pubDate>
+      
+      <guid>https://shareapp.tk/admin/team/4promotingteamadmin.html</guid>
+      <description>Admins of a team are given the ability to promote users to team admins. Team admins may invite and remove members from the team, and promote other users to team admin. Admins may be promoted/demoted.
+How do I add a Team Admin?  First, select the gear icon next to the Team name in the upper left corner of Share. (This is shown in the following screen shot to the right of the team name, &amp;ldquo;Test Team.</description>
+    </item>
+    
+  </channel>
+</rss>

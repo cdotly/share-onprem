@@ -1,0 +1,21 @@
+<div class="breadcrumbs">
+    {{ $currentPage := . }}
+    {{ $pages := .Site.Pages }}
+    {{ $nested := where $pages "Type" "nested" }}
+    
+    <!-- {{ .Title }} -->
+
+        <!-- nested section -->
+    {{ if eq $currentPage $nested }}
+       {{ .Params.section.Title }} / {{ .Page.Title }} 
+
+    <!-- first section -->
+    {{ else }} 
+        {{ .Page.Title }}
+
+    {{ end }}
+        
+
+    <!-- Breadcrumbs / Part X / Page Y / Child z -->
+</div>
+
